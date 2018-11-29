@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Write a JavaScript function that reverse a number. </title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function reverse_String(n){
+			//var n = n + "";  // convert sting to a number
+			//var n = String(n);  
+			var n = n.toString();
+			var revNum = n.split("").reverse("").join("");
+			
+			// convert number to a sting using Number("world")
+
+			//The split() method is used to split a String object into an array of strings by separating the string into substrings.
+			/*Code : console.log('1000'.split(""));
+			Output : ["1", "0", "0", "0"]
+
+			The reverse() method is used to reverse an array in place. The first array element becomes the last and the last becomes the first.
+			Code : console.log(["1", "0", "0", "0"].reverse());
+			Output : ["0", "0", "0", "1"]
+
+			The join() method is used to join all elements of an array into a string.
+			Code : console.log(["1", "0", "0", "0"].reverse().join(""));
+			Output : "0001"*/
+			return revNum;
+			}
+
+			console.log(reverse_String(12345));
+
+
+	</script>
+</body>
+</html>

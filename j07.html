@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Counts the number of vowels within a string </title>
+</head>
+<body>
+
+    <input type="text" name="" id="inputId">
+    <button onclick="findVowelsInString()">Count Vowels</button> 
+
+  <script type="text/javascript">
+    
+	function findVowelsInString(inputStrng){
+		var inputStrng = document.getElementById("inputId").value;
+		var vowels = "aeiouAEIOU";
+		var count = 0;
+
+		for (var i = 0; i < inputStrng.length; i++) {
+		 	if (vowels.indexOf(inputStrng[i]) !== -1) { count += 1};
+		 	console.log(inputStrng[i]);
+		 	console.log(vowels.indexOf(inputStrng[i]));
+		 }
+		 alert(count);
+	}   
+   //women women.indesOf(women[0])
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Find the longest word with in a string </title>
+</head>
+<body>
+
+    <input type="text" name="" id="inputId">
+    <button onclick="myfunction()">GO</button> 
+
+  <script type="text/javascript">
+    
+    function myfunction(str){
+      var str = document.getElementById("inputId").value;
+      var strSplit = str.split(' ');
+      var longestWord = 0;
+
+      for (var i = 0; i < strSplit.length; i++) {
+          if (strSplit[i].length > longestWord) {
+            longestWord = strSplit[i].length;
+          }
+      }
+      alert (longestWord);
+
+    }
+//console.log(myfunction("The quick brown fox jumped over the lazy dog"));
+
+
+//second method
+
+function findLongestWord(str) {
+  var strSplit = str.split(' ');
+  var longestWord = 0;
+  for(var i = 0; i < strSplit.length; i++){
+    if(strSplit[i].length > longestWord){
+       longestWord = strSplit[i].length;
+     }
+  }
+  return longestWord;
+}
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+   
+  </script>
+
+</body>
+</html>

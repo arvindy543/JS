@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8/>
+<title>Returns a passed string with letters in alphabetical order </title>
+</head>
+<body>
+
+	<input type="text" name="" id="somevalue">
+	<button onclick="alphValue()">Get New String</button>
+
+  <script type="text/javascript">
+
+  	function alphValue(){
+  			var vInput = document.getElementById("somevalue").value;
+  	  		var result = getNewStringInAlph(vInput);
+  	  		alert(result + " is the string in alphabetical order");
+  	  	}
+
+  	function getNewStringInAlph(vInput){
+  		 vInput = vInput.split('').sort().join('');
+  		return vInput;
+  	}
+  	//console.log(getNewStringInAlph("awesome things"));
+
+  </script>
+
+</body>
+</html>
+
+

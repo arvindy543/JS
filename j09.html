@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Write a JavaScript function which accepts an argument and returns the type. </title>
+</head>
+<body>
+
+    <input type="text" name="" id="inputId">
+    <button onclick="returnArgType()">Check type of argument</button> 
+
+  <script type="text/javascript">
+   
+    function returnArgType(inputArg){
+        var inputArg = document.getElementById("inputId").value;
+        result = typeof inputArg;
+        alert('argument type is ' + result);
+    }
+
+  </script>
+
+</body>
+</html>
